@@ -1,0 +1,14 @@
+.element{
+    row-gap: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    width: 282px;
+    margin: 0 6vw 0;
+}
+
+@media (min-width: 760px) {
+    .element {
+        margin: 0;
+        justify-self: center;
+    }
+}

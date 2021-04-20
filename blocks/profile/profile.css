@@ -1,0 +1,15 @@
+.profile{
+    font-family: "inter", Arial, sans-serif;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+@media (min-width: 760px) {
+    .profile{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}

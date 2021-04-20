@@ -1,0 +1,12 @@
+.profile__info{
+    font-family: inherit;
+    font-style: normal;
+    color: inherit;
+    text-align: center;
+    padding-bottom: 36px;
+}
+
+@media (min-width: 1280px) {
+    .profile__info{
+    }
+}

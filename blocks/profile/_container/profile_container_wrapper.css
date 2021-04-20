@@ -1,0 +1,15 @@
+.profile_container_wrapper{
+    padding: 38.25px 6vw 36px;
+}
+
+@media (min-width: 760px) {
+    .profile_container_wrapper{
+        padding: 38.25px 6vw 47.25px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .profile_container_wrapper{
+        padding: 36.25px 200px 47.25px;
+    }
+}

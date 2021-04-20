@@ -1,0 +1,27 @@
+.profile__edit-button{
+    display: inline-block;
+    background-color: black;
+    background-image: url(../../../images/profile/Edit\ ButtonVec.svg);
+    background-position: center;
+    background-size: cover;
+    box-sizing: border-box;
+    border: 1px solid #FFFFFF;
+    width: 18px;
+    height: 18px;
+    padding: 0;
+    margin: 0;
+}
+
+@media (min-width: 760px) {
+    .profile__edit-button{
+        width: 20px;
+        height: 20px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .profile__edit-button{
+        width: 24px;
+        height: 24px;
+    }
+}

@@ -1,0 +1,5 @@
+.popup__line{
+    border-bottom: black 1px solid;
+    opacity: 0.2;
+    margin-top: 13px;
+}
