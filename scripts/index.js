@@ -34,18 +34,22 @@ popup.addEventListener('click', handleOverlayClick);
 
 
 
-let like = document.querySelector('.element__like-button');
+
+let like = document.querySelectorAll('.element__like-button');
+
+console.log(like);
+
+
 
 function likeActive(){
-    like.classList.toggle('element__like-button_active');
+    like[3].classList.toggle('element__like-button_active');
 }
 
 
-like.addEventListener('click', likeActive);
+like[3].addEventListener('click', likeActive);
 
 
-
-
+/*
 
 
 let nameAuthor = document.getElementById('nameAuthor');
@@ -74,3 +78,4 @@ function formSubmitHandler (evt) {
 formElement.addEventListener('submit', formSubmitHandler);
 
 console.log(nameInput);
+*/
