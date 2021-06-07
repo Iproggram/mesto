@@ -1,13 +1,4 @@
-.element__like-button_active{
+.element__like-button_active {
     background-color: #fff;
     background-image: url(../../../../images/element/likeActiv.svg);
-    background-position: center;
-    background-size: cover;
-    box-sizing: border-box;
-    border: none;
-    min-width: 22px;
-    height: 19px;
-    padding: 0;
-    margin-left: 20px;
-    transition: 0.2s ease-in-out;
 }

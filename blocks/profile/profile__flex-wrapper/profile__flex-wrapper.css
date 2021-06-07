@@ -1,5 +1,4 @@
-.profile_container_wrapper {
-    margin: 38.25px 0 36px;
+.profile__flex-wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -12,13 +11,9 @@
 }
 
 @media (min-width: 760px) {
-    .profile_container_wrapper {
-        margin: 40px auto 51px;
-    }
-}
-
-@media (min-width: 1260px) {
-    .profile_container_wrapper {
-        margin: 36.25px 200px 47.25px;
+    .profile__flex-wrapper {
+        -webkit-box-pack: start;
+        -ms-flex-pack: start;
+        justify-content: start;
     }
 }

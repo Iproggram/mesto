@@ -1,0 +1,9 @@
+.main_wrapper {
+    margin: 0 19px;    
+}
+
+@media (min-width: 360px) {
+    .main_wrapper {
+        margin: 0 auto;
+    }
+}

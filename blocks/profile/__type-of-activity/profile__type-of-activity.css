@@ -1,20 +1,24 @@
-.profile__type-of-activity{
+.profile__type-of-activity {
     font-weight: 400;
     font-size: 14px;
     line-height: 17px;
     text-align: center;
     margin: 14px auto 0;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 @media (min-width: 760px) {
-    .profile__type-of-activity{
+    .profile__type-of-activity {
         font-size: 16px;
         text-align: start;
     }
 }
 
 @media (min-width: 1280px) {
-    .profile__type-of-activity{
+    .profile__type-of-activity {
         font-size: 18px;
         line-height: 22px;
         margin-top: 16px;

@@ -1,4 +1,4 @@
-.header{
+.header {
     padding: 0;
     margin: 0;
     border-bottom: 1px solid #545454;
@@ -7,13 +7,13 @@
 }
 
 @media (min-width: 880px) {
-    .header{
+    .header {
         margin: 0 auto 0;
     }
 }
 
 @media (min-width: 1280px) {
-    .header{
+    .header {
         margin: 0 200px 0;
     }
 }
