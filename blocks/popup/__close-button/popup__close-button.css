@@ -1,5 +1,5 @@
 .popup__close-button {
-    position: relative;
+    position: absolute;
     background-color: rgba(0, 0, 0, 0);
     background-image: url(../../../images/popup/Close\ Icn.svg);
     background-position: center;
@@ -10,12 +10,12 @@
     height: 26px;
     width: 26px;
     padding: 0;
-    -ms-flex-item-align: end;
-    align-self: flex-end;
-    margin-bottom: 13.62px;
     -webkit-transition: 0.1s ease-in-out;
     -o-transition: 0.1s ease-in-out;
     transition: 0.1s ease-in-out;
+    right: 0;
+    top: -34px;
+
 }
 
 .popup__close-button:hover {
@@ -26,11 +26,5 @@
     .popup__close-button {
         height: 40px;
         width: 40px;
-    }
-}
-
-@media (min-width: 920px) {
-    .popup__close-button {
-        margin-bottom: 0;
     }
 }

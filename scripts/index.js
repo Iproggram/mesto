@@ -1,30 +1,23 @@
 let openPopupButton = document.querySelector('.profile__edit-button');
 let popup = document.querySelector('.popup');
 let closePopupButtom = document.querySelector('.popup__close-button');
+let formElement = document.querySelector('.popup__content');
+let nameInput = document.querySelector('.popup__input_string_name-author');
+let jobInput = document.querySelector('.popup__input_string_type-of-activity');
+let profileAuthor = document.querySelector('.profile__author');
+let profileTypeOfActivity = document.querySelector('.profile__type-of-activity');
 
-function togglePopup(event) {
+function togglePopup() {
     popup.classList.toggle('popup_is-opened');
+    nameInput.value = profileAuthor.textContent;
+    jobInput.value = profileTypeOfActivity.textContent;
 }
-
-openPopupButton.addEventListener('click', togglePopup);
-closePopupButtom.addEventListener('click', togglePopup);
 
 function handleOverlayClick(event) {
     if (event.target === event.currentTarget) {
         togglePopup(event);
     }
 }
-
-popup.addEventListener('click', handleOverlayClick);
-
-let formElement = document.querySelector('.popup__container');
-let nameInput = document.querySelector('.popup__input_string_name-author');
-let jobInput = document.querySelector('.popup__input_string_type-of-activity');
-let profileAuthor = document.querySelector('.profile__author');
-let profileTypeOfActivity = document.querySelector('.profile__type-of-activity');
-
-nameInput.value = profileAuthor.textContent;
-jobInput.value = profileTypeOfActivity.textContent;
 
 function formSubmitHandler(evt) {
     // Эта строчка отменяет стандартную отправку формы.
@@ -38,11 +31,19 @@ function formSubmitHandler(evt) {
     profileAuthor.textContent = nameInputContent;
     profileTypeOfActivity.textContent = jobInputContent;
     // Вставьте новые значения с помощью textContent
-    togglePopup(event);
+    togglePopup(evt);
 }
 // Прикрепляем обработчик к форме:
 // он будет следить за событием “submit” - «отправка»
+
+openPopupButton.addEventListener('click', togglePopup);
+closePopupButtom.addEventListener('click', togglePopup);
+popup.addEventListener('click', handleOverlayClick);
 formElement.addEventListener('submit', formSubmitHandler);
+
+
+
+
 
 /*  пытаемся заставить работать лайки
 let like = document.querySelectorAll('.element__like-button');
