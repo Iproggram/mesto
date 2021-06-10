@@ -20,30 +20,30 @@
     -webkit-box-pack: start;
     -ms-flex-pack: start;
     justify-content: flex-start;
-    padding: 73px 19px 0;
+    padding: 123px 19px 0;
 }
 
 @media (min-width: 340px) {
     .popup {
-        padding: 73px 6% 0;
+        padding: 123px 6% 0;
     }
 }
 
 @media (min-width: 450px) {
     .popup {
-        padding: 113px 17% 0;
+        padding: 123px 17% 0;
     }
 }
 
 @media (min-width: 600px) {
     .popup {
-        padding: 113px 20% 0;
+        padding: 123px 20% 0;
     }
 }
 
 @media (min-width: 920px) {
     .popup {
-        padding: 113px 22% 0;
+        padding: 123px 22% 0;
     }
 }
 
