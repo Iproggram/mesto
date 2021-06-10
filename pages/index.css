@@ -15,11 +15,13 @@
 @import url(../blocks/profile/_container/profile_container_wrapper.css);
 @import url(../blocks/profile/__avatar/profile__avatar.css);
 @import url(../blocks/profile/__info/profile__info.css);
-@import url(../blocks/profile/profile__flex-wrapper/profile__flex-wrapper.css);
+@import url(../blocks/profile/__flex-wrapper/profile__flex-wrapper.css);
 @import url(../blocks/profile/__author/profile__author.css);
 @import url(../blocks/profile/__edit-button/profile__edit-button.css);
+@import url(../blocks/profile/__image-edit/profile__image-edit.css);
 @import url(../blocks/profile/__type-of-activity/profile__type-of-activity.css);
 @import url(../blocks/profile/__add-button/profile__add-button.css);
+@import url(../blocks/profile/__image-add/profile__image-add.css);
 
 @import url(../blocks/popup/popup.css);
 @import url(../blocks/popup/_is-opened/popup_is-opened.css);
@@ -27,12 +29,9 @@
 @import url(../blocks/popup/__close-button/popup__close-button.css);
 @import url(../blocks/popup/__content/popup__content.css);
 @import url(../blocks/popup/__title/popup__title.css);
-@import url(../blocks/popup/__imput-area/popup__imput-area.css);
 @import url(../blocks/popup/__input/popup__input.css);
 @import url(../blocks/popup/__input/_string/popup__input_string_type-of-activity.css);
-@import url(../blocks/popup/__line/popup__line.css);
 @import url(../blocks/popup/__submit-button/popup__submit-button.css);
-@import url(../blocks/popup/__submit-button-text/popup__submit-button-text.css);
 @import url(../blocks/popup/__input/popup__input.css);
 
 @import url(../blocks/elements/elements.css);

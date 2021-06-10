@@ -1,9 +1,5 @@
 .profile__edit-button {
-    display: inline-block;
     background-color: black;
-    background-image: url(../../../images/profile/Edit\ ButtonVec.svg);
-    background-position: center;
-    background-size: cover;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     border: 1px solid #ffffff;
@@ -20,7 +16,7 @@
     opacity: 0.6;
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 830px) {
     .profile__edit-button {
         width: 24px;
         height: 24px;

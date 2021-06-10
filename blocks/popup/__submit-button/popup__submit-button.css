@@ -9,6 +9,12 @@
     -webkit-transition: 0.1s ease-in-out;
     -o-transition: 0.1s ease-in-out;
     transition: 0.1s ease-in-out;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    font-family: "inter", Arial, sans-serif;
 }
 
 .popup__submit-button:hover {
