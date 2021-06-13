@@ -18,28 +18,27 @@
 
 @media (min-width: 760px) {
     .profile__add-button {
-        width: 140px;
+        min-width: 150px;
+        max-width: 150px;
         margin-left: 40px;
     }
 }
 
 @media (min-width: 900px) {
     .profile__add-button {
-        width: 150px;
         margin-left: 140px;
     }
 }
 
 @media (min-width: 980px) {
     .profile__add-button {
-        width: 150px;
         margin-left: 200px;
     }
 }
 
 @media (min-width: 1024px) {
     .profile__add-button {
-        width: 244px;
+        margin-left: 224px;
     }
 }
 

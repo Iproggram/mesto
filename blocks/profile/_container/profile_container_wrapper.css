@@ -17,8 +17,15 @@
     }
 }
 
+
+@media (min-width: 1020px) {
+    .profile_container_wrapper {
+        max-width: 1120px;
+    }
+}
+
 @media (min-width: 1260px) {
     .profile_container_wrapper {
-        margin: 36.25px 200px 47.25px;
+        margin: 36.25px auto 47.25px;
     }
 }

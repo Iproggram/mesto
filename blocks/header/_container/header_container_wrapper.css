@@ -1,5 +1,6 @@
 .header_container_wrapper {
     margin-top: 28px;
+    border-bottom: 1px solid #545454;
 }
 
 @media (min-width: 400px) {
