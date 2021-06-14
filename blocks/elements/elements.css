@@ -21,7 +21,7 @@
     }
 }
 
-@media (min-width: 1160px) {
+@media (min-width: 1020px) {
     .elements {
         -ms-grid-columns: 282px 20px 282px 20px 282px;
         grid-template-columns: repeat(3, 282px);

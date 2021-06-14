@@ -1,0 +1,16 @@
+.footer {
+    width: calc(320px - 19px * 2);
+    margin: 0 auto;
+}
+
+@media (min-width: 760px) {
+    .footer {
+        width: calc(282px * 2 + 20px);
+    }
+}
+
+@media (min-width: 1020px) {
+    .footer {
+        width: calc(282px * 3 + 20px * 2);
+    }
+}

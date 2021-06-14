@@ -17,7 +17,7 @@
     }
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1020px) {
     .profile__type-of-activity {
         font-size: 18px;
         line-height: 22px;
