@@ -39,13 +39,26 @@
             &#169; 2020 Mesto Russia
         </p>
     </footer>
-    <section class="popup">
+    <section class="popup popup__edit-profile">
         <div class="popup__container">
             <button class="popup__close-button" type="button"></button>
             <form class="popup__content">
                 <h2 class="popup__title">Редактировать профиль</h2>
                 <input class="popup__input popup__input_string_name-author" type="text">
                 <input class="popup__input popup__input_string_type-of-activity" type="text">
+                <button class="popup__submit-button" type="submit">
+                    Сохранить
+                </button>
+            </form>
+        </div>
+    </section>
+    <section class="popup popup__add-cards">
+        <div class="popup__container">
+            <button class="popup__close-button" type="button"></button>
+            <form class="popup__content">
+                <h2 class="popup__title">Новое место</h2>
+                <input class="popup__input popup__input_string_name-place" type="text" placeholder="Название">
+                <input class="popup__input popup__input_string_link" type="text" placeholder="Ссылка на картинку">
                 <button class="popup__submit-button" type="submit">
                     Сохранить
                 </button>
