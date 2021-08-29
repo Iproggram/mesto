@@ -34,23 +34,19 @@ jobInput.value = profileTypeOfActivity.textContent;
 
 
 
-function openPopup(event) {
-  if (event.target === openPopupEditButton) {
-    popupEditProfile.classList.add('popup_is-opened');
+function openPopup(evtPopup) {
+  if (evtPopup.target === openPopupEditButton || openPopupAddButton) {
+    evtPopup.classList.add('popup_is-opened');
   }
-  else if( event.target === openPopupAddButton) {
-    popupAddCards.classList.add('popup_is-opened');
-}
+};
 
-}
-
-/*function closePopup(evt) {
+function closePopup(evt) {
    {
     evt.target.classList.remove('popup_is-opened');
   }
  
 }
-*/const button = document.querySelector('button');
+const button = document.querySelector('button');
 button.addEventListener('click', function (evt) {
 
     const eventTarget = evt.target;
