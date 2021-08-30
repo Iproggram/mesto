@@ -15,6 +15,7 @@ let textElem = document.querySelector('.element__text')[0];
 
 
 
+
 function togglePopup(evt) {
   if (evt.currentTarget === editButton) {
     nameInput.value = profileAuthor.textContent;
