@@ -1,18 +1,32 @@
 const popup = document.querySelector('.popup');
+const editPopup = document.querySelector('.popup_edit-profile');
+const addPopup = document.querySelector('.popup_new-place');
 const editButton = document.querySelector('.profile__edit-button');
 const addButton = document.querySelector('.profile__add-button');
-const closePopupButtom = document.querySelector('.popup__close-button');
+const closePopupEditButton = document.querySelector('.popup__close-button');
+const closePopupAddButton = document.querySelector('.popup__close-add-button');
 const submitButton = document.querySelector('.popup__submit-button');
-
+const editSubmitButton = document.querySelector('.');
+const addSubmitButton = document.querySelector('.');
+/*---------------------------------------------------
+-----------------------------------------------------
+-----------------------------------------------------
+дописать кнопки отправки форм------------------------
+изменить названия классов кнопок "закрыть" в --------
+соответствии  с БЭМ----------------------------------
+-----------------------------------------------------
+---------------------------------------------------*/
 let formElement = document.querySelector('.popup__content');
 let nameInput = document.querySelector('.popup__input_string_name-author');
 let jobInput = document.querySelector('.popup__input_string_type-of-activity');
+let placeInput = document.querySelector('.popup__input_string_name-place');
+let linkInput = document.querySelector('.popup__input_string_link-img');
 let profileAuthor = document.querySelector('.profile__author');
 let profileTypeOfActivity = document.querySelector('.profile__type-of-activity');
 
 
 
-let textElem = document.querySelector('.element__text')[0];
+
 
 
 const itemTemplateContent = document.querySelector('.element-template').content;
@@ -22,34 +36,36 @@ const elementText = itemTemplateContent.querySelector('.element__text');
 const element = itemTemplateContent.querySelector('.element');
 
 
-
-function togglePopup(evt) {
+function openPopup(evt) {
   if (evt.currentTarget === editButton) {
     nameInput.value = profileAuthor.textContent;
     jobInput.value = profileTypeOfActivity.textContent;
-    submitButton.classList.add('editSubmitButton');
-    submitButton.classList.remove('addSubmitButton');
+    editPopup.classList.add('popup_is-opened');
   }
 
   else if (evt.currentTarget === addButton) {
-    nameInput.value = "название";
-    jobInput.value = "ссылка на картинку";
-    submitButton.classList.add('addSubmitButton');
-    submitButton.classList.remove('editSubmitButton');
+    placeInput.value = 'название';
+    linkInput.value ='ссылка на картинку';
+    addPopup.classList.add('popup_is-opened');
   }
-
-  popup.classList.toggle('popup_is-opened')
+  
 };
 
 
 
+function closePopup() {
+  
+  addPopup.classList.remove('popup_is-opened');
+  editPopup.classList.remove('popup_is-opened');
+ 
+};
 
 
 
 
 function handleOverlayClick(event) {
   if (event.target === event.currentTarget) {
-    togglePopup(event);
+    closePopup(event);
   }
 }
 
@@ -104,13 +120,8 @@ function formSubmitHandler(evt) {
 
   }
 
-  togglePopup(evt);
+  closePopup(evt);
 }
-
-
-
-
-
 
 
 
@@ -168,8 +179,10 @@ function addElement() {
 
 }
 
-editButton.addEventListener('click', togglePopup);
-addButton.addEventListener('click', togglePopup);
-closePopupButtom.addEventListener('click', togglePopup);
-popup.addEventListener('click', handleOverlayClick);
+editButton.addEventListener('click', openPopup);
+addButton.addEventListener('click', openPopup);
+closePopupEditButton.addEventListener('click', closePopup);
+closePopupAddButton.addEventListener('click', closePopup);
+editPopup.addEventListener('click', handleOverlayClick);
+addPopup.addEventListener('click', handleOverlayClick);
 formElement.addEventListener('submit', formSubmitHandler);

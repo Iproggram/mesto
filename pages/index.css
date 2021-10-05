@@ -26,12 +26,19 @@
 @import url(../blocks/popup/_is-opened/popup_is-opened.css);
 @import url(../blocks/popup/__container/popup__container.css);
 @import url(../blocks/popup/__close-button/popup__close-button.css);
+@import url(../blocks/popup/__closse-add-button/popup__close-add-button.css);
+@import url(../blocks/popup/__close-edit-button/popup__close-edit-button.css);
 @import url(../blocks/popup/__content/popup__content.css);
 @import url(../blocks/popup/__title/popup__title.css);
 @import url(../blocks/popup/__input/popup__input.css);
 @import url(../blocks/popup/__input/_string/popup__input_string_type-of-activity.css);
+@import url(../blocks/popup/__input/_string/popup__input_string_name-author.css);
+@import url(../blocks/popup/__input/_string/popup__input_string_name-place.css);
+@import url(../blocks/popup/__input/_string/popup__input_string_type-of-activity.css);
 @import url(../blocks/popup/__submit-button/popup__submit-button.css);
 @import url(../blocks/popup/__input/popup__input.css);
+@import url(../blocks/popup/_edit-progile/popup_edit-profile.css);
+@import url(../blocks/popup/_new-place/popup_new-place.css);
 
 @import url(../blocks/elements/elements.css);
 
